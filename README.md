@@ -22,6 +22,7 @@ It allows users to **register, log in, add, search, edit, and delete contacts**.
 
 ## 📂 Project Structure
 /LAMPAPI
+
 ├── addContact.php
 
 ├── deleteContact.php
