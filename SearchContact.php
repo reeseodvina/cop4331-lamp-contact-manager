@@ -37,7 +37,7 @@
 			
 			if( empty($searchTerm) )
 			{
-				// ✅ If search is empty, return ALL contacts for the user
+				// If search is empty, return ALL contacts for the user
 				$stmt = $conn->prepare("SELECT ID, FirstName, LastName, Phone, Email FROM Contacts WHERE UserID=?");
 				$stmt->bind_param("i", $userId);
 				$stmt->execute();
@@ -51,7 +51,7 @@
 					$row['userId'] = $userId; // Add userId to each contact
 					unset($row['FirstName']); // Remove individual fields
 					unset($row['LastName']);
-					$contacts[] = $row; // ✅ Includes ID
+					$contacts[] = $row; 
 				}
 				$stmt->close();
 
@@ -88,7 +88,7 @@
 						$row['userId'] = $userId; // Add userId to each contact
 						unset($row['FirstName']); // Remove individual fields
 						unset($row['LastName']);
-						$contacts[] = $row; // ✅ Includes ID
+						$contacts[] = $row; 
 					}
 					$stmt->close();
 					
@@ -151,7 +151,7 @@
 			{
 				// Format the response to match expected structure
 				$contact = array(
-					'ID' => $row['ID'], // ✅ Include ID
+					'ID' => $row['ID'], 
 					'Name' => $fullName,
 					'Phone' => $row['Phone'],
 					'Email' => $row['Email'],
