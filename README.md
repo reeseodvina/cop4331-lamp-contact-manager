@@ -1,6 +1,6 @@
 # LAMP Stack Project – Contact Manager
 
-This project was developed by Sultan Lodi, 
+This project was developed by Sultan Lodi, Justin Gabon 
 
 
 This project is a simple **Contact Manager** web application built on the **LAMP stack** (Linux, Apache, MySQL, PHP).  
