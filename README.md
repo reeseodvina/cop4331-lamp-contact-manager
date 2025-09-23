@@ -20,39 +20,6 @@ It allows users to **register, log in, add, search, edit, and delete contacts**.
 
 ---
 
-## 📂 Project Structure
-/LAMPAPI
-
-├── addContact.php
-
-├── deleteContact.php
-
-├── editContact.php
-
-├── LoginContact.php
-
-├── RegisterContact.php
-
-├── SearchContact.php
-
-
-/html
-
-├── index.html # Login page
-
-├── signup.html # Registration page
-
-├── dashboard.html # Contact manager (search/add/edit/delete)
-
-├── styles.css # Styling
-
-├── main.js # Frontend logic
-
-
-
-
----
-
 ## 🗄️ Database Design
 The database schema is documented with an **Entity Relationship Diagram (ERD)**.  
 
