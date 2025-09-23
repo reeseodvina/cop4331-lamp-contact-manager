@@ -7,21 +7,34 @@ html, body {
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
-  background-color: #0a2540; /* solid navy */
-  color: #fff;
+  background-color: #1a2b4c; /* light navy blue background */
+  color: #000; /* dark text for yellow cards */
 }
 
 /* Header */
 header {
-  background: #2c3e50; /* slate gray */
-  padding: 20px;
-  text-align: center;
+  background: #000; /* black */
+  padding: 15px 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center logo + text as a unit */
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 header h1 {
   margin: 0;
   font-size: 2.2rem;
-  color: #00bfff; /* bright blue */
+  color: #FFD700; /* gold yellow */
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
 }
 
 /* Main container grows to push footer down */
@@ -32,9 +45,10 @@ main {
   padding: 20px;
 }
 
-/* Card layout */
+/* Card layout (used in login + signup pages) */
 .card {
-  background: #1f2937;
+  background: #FFD93D; /* sunflower yellow */
+  color: #000;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 12px;
@@ -43,7 +57,7 @@ main {
 
 .card h2 {
   margin-top: 0;
-  color: #ffd700; /* yellow welcome text */
+  color: #000;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -83,24 +97,24 @@ button {
   transition: background 0.2s ease;
 }
 
-/* Primary button (login style) */
+/* Primary button (login style / Register button in signup) */
 .login-btn {
-  background-color: #00bfff; /* bright blue */
+  background-color: #4CAF50; /* light green */
   color: white;
 }
 
 .login-btn:hover {
-  background-color: #009acd;
+  background-color: #45a049; /* darker green */
 }
 
-/* Secondary button (signup style, also used for delete/logout) */
+/* Secondary button (signup style / Login Here button in signup) */
 .signup-btn {
-  background-color: #ff4757; /* red */
+  background-color: #e63946; /* red */
   color: white;
 }
 
 .signup-btn:hover {
-  background-color: #e84118;
+  background-color: #c72c3c; /* darker red */
 }
 
 /* Search form */
@@ -111,7 +125,8 @@ button {
 
 /* Contact list */
 .contact-item {
-  background: #2c3e50;
+  background: #FFD93D;
+  color: #000;
   padding: 12px;
   margin-bottom: 10px;
   border-radius: 8px;
@@ -127,7 +142,7 @@ button {
 footer {
   text-align: center;
   padding: 15px;
-  background: #2c3e50; /* slate gray */
+  background: #000;
   color: #aaa;
   font-size: 0.9rem;
 }
@@ -138,4 +153,56 @@ footer {
   padding: 8px 16px;
   font-size: 14px;
   height: auto;
+}
+
+/* ========================= */
+/* MOBILE FRIENDLY STYLES    */
+/* ========================= */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  main {
+    margin: 15px auto;
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    height: 42px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* ========================= */
+/* DASHBOARD SPECIFIC STYLES */
+/* ========================= */
+.dashboard-page .card {
+  background: #1f1f1f; /* dark gray cards */
+  color: #fff;
+}
+
+.dashboard-page .card h2 {
+  color: #FFD700; /* keep headings yellow */
+}
+
+.dashboard-page .contact-item {
+  background: #2c2c2c;
+  color: #fff;
 }
