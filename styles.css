@@ -45,6 +45,7 @@ main {
 }
 
 /* Card layout (used in login + signup pages) */
+/* Card layout (used in login + signup pages) */
 .card {
   background: #E0E0E0; /* gray */
   color: #000;
@@ -97,6 +98,7 @@ button {
 }
 
 /* Primary button (login style / Register button in signup) */
+/* Primary button (login style / Register button in signup) */
 .login-btn {
   background-color: #1A1A2E; /* dark navy */
   color: white;
@@ -126,6 +128,8 @@ button {
 .contact-item {
   background: #FFD93D;
   color: #000;
+  background: #FFD93D;
+  color: #000;
   padding: 12px;
   margin-bottom: 10px;
   border-radius: 8px;
@@ -153,6 +157,111 @@ footer {
   font-size: 14px;
   height: auto;
 }
+
+/* ========================= */
+/* MOBILE FRIENDLY STYLES    */
+/* ========================= */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  main {
+    margin: 15px auto;
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    height: 42px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* ========================= */
+/* DASHBOARD SPECIFIC STYLES */
+/* ========================= */
+.dashboard-page .card {
+  background: #1f1f1f; /* dark gray cards */
+  color: #fff;
+}
+
+.dashboard-page .card h2 {
+  color: #FFD700; /* keep headings yellow */
+}
+
+.dashboard-page .contact-item {
+  background: #2c2c2c;
+  color: #fff;
+}
+
+/* ========================= */
+/* MOBILE FRIENDLY STYLES    */
+/* ========================= */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  main {
+    margin: 15px auto;
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    height: 42px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* ========================= */
+/* DASHBOARD SPECIFIC STYLES */
+/* ========================= */
+.dashboard-page .card {
+  background: #E0E0E0; /* gray cards */
+  color: #000;
+}
+
+.dashboard-page .card h2 {
+  color: #1A1A2E; /* keep headings dark navy */
+}
+
+.dashboard-page .contact-item {
+  background: #FFF4CC; /* white contact cards */
+  color: #1A1A2E; /* dark navy text */
+}
+
 
 /* ========================= */
 /* MOBILE FRIENDLY STYLES    */
